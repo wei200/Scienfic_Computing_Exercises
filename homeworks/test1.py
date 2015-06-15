@@ -38,9 +38,9 @@ else:
     output_file = open("test1output.txt","w")
     sys.stdout = output_file
 
-print "Code run by **insert your name here**"
+print "Code run by vv"
 
-UWHPSC = os.environ.get('UWHPSC','** not set **')
+UWHPSC = os.environ.get('UWHPSC','/Users/vv/Documents/courses/HPC/uwhpsc')
 print "Environment variable UWHPSC is %s"  % UWHPSC
 
 MYHPSC = os.environ.get('MYHPSC','** not set **')
