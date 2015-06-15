@@ -10,8 +10,8 @@ from numpy.linalg import solve
 # Set up linear syster to interpolate through data points:
 
 # Data points:
-xi = np.array([-1.,0.,2])
-yi = np.array([1.,-1.,7.])
+xi = np.array([-1.,1.,2])
+yi = np.array([0.,4.,3])
 
 # Define A and b for Ax = b
 A = np.array([[1.,-1.,1.],[1.,0.,0.],[1.,2.,4.]])
