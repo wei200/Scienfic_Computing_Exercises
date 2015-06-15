@@ -1,0 +1,23 @@
+
+Code run by **vv**
+Environment variable UWHPSC is /Users/vv/Documents/courses/HPC/uwhpsc
+
+which ipython returns...
+/usr/local/bin/ipython
+
+which gfortran returns...
+/usr/local/bin/gfortran
+
+gfortran --version returns...
+GNU Fortran (GCC) 4.9.2 20141029 (prerelease)
+Copyright (C) 2014 Free Software Foundation, Inc.
+
+GNU Fortran comes with NO WARRANTY, to the extent permitted by law.
+You may redistribute copies of GNU Fortran
+under the terms of the GNU General Public License.
+For more information about these matters, see the file named COPYING
+
+
+Compiling and running a Fortran code...
+ Code run by  **insert your name here**
+ Successfully ran Fortran 90 program
