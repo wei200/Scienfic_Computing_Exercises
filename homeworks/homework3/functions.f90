@@ -31,7 +31,8 @@ real(kind=8) function f_int(x)
     real(kind=8) :: pi
     pi = acos(-1.d0)
 
-    f_int = x*cos(pi*x) - (1.d0 - 0.6*x**x)
+    f_int = x*cos(pi*x) - (1.d0 - 0.6d0*x**2)
+	
 end function f_int
 
 

@@ -5,11 +5,11 @@
 program intersections
 	
 	use newton, only:solve
-	use functions, only:f_init,fprime_int
+	use functions, only: f_int,fprime_int
 	
 	implicit none
 	real(kind=8) :: x,x0,fx
-	real(kind=8) :: xvals(4)
+	real(kind=8) :: x0vals(4)
 	integer :: iters,itest
 	logical :: debug
 	
@@ -24,8 +24,8 @@ program intersections
 		print *, ' ' ! blank line
 		call solve(f_int,fprime_int,x0,x,iters,debug)
 		
-11		print 11, x, iters
-		format('solver returns x = ',es22.15, ' after', i3, ' iterations')
+		print 11, x, iters
+11		format('solver returns x = ',es22.15, ' after', i3, ' iterations')
 		
 		fx = f_int(x)
 		print 12, fx
