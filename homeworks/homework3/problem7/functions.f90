@@ -57,7 +57,7 @@ real(kind=8) function fprime_quartic(x)
     implicit none
     real(kind=8),intent(in) :: x
 	
-    fprime_quartic = 4.d0(x-1.d0)**3
+    fprime_quartic = 4.d0*(x-1.d0)**3
 
 end function fprime_quartic
 
