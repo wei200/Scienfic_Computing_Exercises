@@ -1,5 +1,7 @@
 
-module quadrature
+module quadrature_omp
+    
+    use omp_lib
 
 contains
 
@@ -17,6 +19,7 @@ real(kind=8) function trapezoid(f,a,b,n)
     h = (b - a)/(n - 1)
     sumf =  0.5d0*(f(a)+f(b))
 
+    !$omp parallel do private(xj) reduction(+:sumf)
     do j = 2,n-1
         xj = a + (j-1)*h
         sumf = sumf + f(xj)
@@ -50,5 +53,5 @@ subroutine error_table(f,a,b,nvals,int_true)
 
 end subroutine error_table
 
-end module quadrature
+end module quadrature_omp
 
